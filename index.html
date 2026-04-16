@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keshav Goyal | Software Engineer</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">KG<span>.</span></a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact" class="btn-outline">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section id="about" class="hero section-padding">
+            <div class="hero-content reveal">
+                <p class="mono-text accent-color">Hi, my name is</p>
+                <h1 class="big-heading">Keshav Goyal.</h1>
+                <h2 class="big-heading subdued"><span id="typewriter"></span><span class="cursor">&nbsp;</span></h2>
+                
+                <div class="hero-desc">
+                    <p>I am a B.Tech Computer Science and Engineering student at IIT Guwahati. I have a strong interest in learning how to build efficient, scalable software and exploring computer architectures, and I am actively seeking opportunities to grow and apply my skills in these fields.</p>
+                    
+                    <div class="passion-block">
+                        <strong>What drives me:</strong> I have a deep passion for problem-solving. Whether it's cracking high-level competitive programming questions, debugging complex concurrency models, or unraveling intricate algorithmic puzzles, I thrive on challenging myself and pushing the limits of my logic.
+                    </div>
+                </div>
+                <a href="mailto:keshav.goyal@iitg.ac.in" class="btn-primary">Get In Touch</a>
+            </div>
+
+            <div class="hero-image reveal">
+                <div class="image-wrapper">
+                    <img src="profile.jpg" alt="Keshav Goyal" id="profile-img" onerror="this.style.display='none'; document.getElementById('img-fallback').style.display='flex';">
+                    <div id="img-fallback" class="fallback-wrapper">
+                        <span>Upload profile.jpg</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section-padding reveal">
+            <h2 class="section-title">Technical Arsenal</h2>
+            
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Languages & Core</h3>
+                    <div class="tags">
+                        <span class="tag">C / C++ (C++20)</span>
+                        <span class="tag">Python*</span>
+                        <span class="tag">Verilog</span>
+                        <span class="tag">Data Structures</span>
+                        <span class="tag">Algorithms</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Web & Frameworks</h3>
+                    <div class="tags">
+                        <span class="tag">Node.js*</span>
+                        <span class="tag">Flask*</span>
+                        <span class="tag">HTML5 / CSS3*</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Databases & Tools</h3>
+                    <div class="tags">
+                        <span class="tag">MySQL*</span>
+                        <span class="tag">Git*</span>
+                        <span class="tag">Computer Architecture</span>
+                    </div>
+                </div>
+            </div>
+            
+            <p class="mono-text subdued" style="margin-top: 2rem; font-size: 0.85rem;">
+                * Elementary proficiency
+            </p>
+        </section>
+
+        <section id="projects" class="section-padding reveal">
+            <h2 class="section-title">Selected Engineering</h2>
+            <div class="projects-layout">
+                
+                <article class="fimagroject-card">
+                    <header>
+                        <p class="mono-text accent-color date">Jan 2026 - Present</p>
+                        <h3>ThreadsafeQueueLib</h3>
+                        <p class="role">Coding Club, IITG</p>
+                    </header>
+                    <div class="project-info">
+                        <p>Designed a C++ concurrency library providing wait-free SPSC and lock-free MPSC/MPMC queues using atomic memory ordering.</p>
+                        <ul class="tech-list">
+                            <li>Implemented bounded ring-buffer & unbounded linked-node queues.</li>
+                            <li>Applied cache-line alignment to mitigate false sharing.</li>
+                            <li>Built a multi-threaded benchmarking framework.</li>
+                        </ul>
+                    </div>
+                    <footer>
+                        <a href="https://github.com/Keshav-goyal006/ThreadsafeQueueLib-CodingClubIITG" target="_blank" class="github-link">View Source &rarr;</a>
+                    </footer>
+                </article>
+
+                <article class="project-card">
+                    <header>
+                        <p class="mono-text accent-color date">Mar 2026 - Present</p>
+                        <h3>Image Convolution Accelerator</h3>
+                        <p class="role">CS224 Project</p>
+                    </header>
+                    <div class="project-info">
+                        <p>Architected a real-time image processing system bridging custom computer architecture with specialized hardware accelerators.</p>
+                        <ul class="tech-list">
+                            <li>Optimized 3-stage execution pipeline with dynamic BTB.</li>
+                            <li>Highly parallelized 3x3 MAC unit engine for spatial filtering.</li>
+                            <li>Managed asynchronous streams via custom VGA controller.</li>
+                        </ul>
+                    </div>
+                    <footer>
+                        <a href="https://github.com/Keshav-goyal006/CS224-Project" target="_blank" class="github-link">View Source &rarr;</a>
+                    </footer>
+                </article>
+
+                <article class="project-card">
+                    <header>
+                        <p class="mono-text accent-color date">Aug 2025 - Sep 2025</p>
+                        <h3>Real-Time Person Tracking System</h3>
+                        <p class="role">IITG.ai Club</p>
+                    </header>
+                    <div class="project-info">
+                        <p>Built a real-time CCTV tracking system integrating YOLOv8 + ByteTrack for detection and FastReID for cross-frame re-identification.</p>
+                        <ul class="tech-list">
+                            <li>Maintained IDs across occlusions using cosine similarity.</li>
+                            <li>Automated appearance detection with CSV event logging.</li>
+                        </ul>
+                    </div>
+                    <footer>
+                        <a href="https://github.com/AyushGarg8646/CCTV-Project" target="_blank" class="github-link">View Source &rarr;</a>
+                    </footer>
+                </article>
+
+            </div>
+        </section>
+
+        <section id="experience" class="section-padding double-column reveal">
+            <div class="column">
+                <h2 class="section-title">Achievements</h2>
+                <div class="timeline-item">
+                    <h4>Competitive Programming (Codeforces)</h4>
+                    <span class="mono-text accent-color">Rating: 1496 (Specialist)</span>
+                    <p>Handle: <a href="https://codeforces.com/profile/Keshav.Goyal" target="_blank">Keshav.Goyal</a>.</p>
+                </div>
+                <div class="timeline-item">
+                    <h4>ICPC India Preliminary Round 2024</h4>
+                    <span class="mono-text accent-color">Team Rank: 568 (All-India)</span>
+                </div>
+                <div class="timeline-item">
+                    <h4>NSEC 2023-24 (INChO Qualifier)</h4>
+                    <span class="mono-text accent-color">Top 352 / 37,000</span>
+                    <p>Qualified for the prestigious Indian National Chemistry Olympiad.</p>
+                </div>
+                <div class="timeline-item">
+                    <h4>JEE Advanced & Main</h4>
+                    <span class="mono-text accent-color">AIR 534 (Adv) | AIR 1666, 99.90%ile (Main)</span>
+                </div>
+            </div>
+
+            <div class="column">
+                <h2 class="section-title">Leadership</h2>
+                <div class="timeline-item">
+                    <h4>Coordinator</h4>
+                    <span class="mono-text accent-color">Coding Club, IIT Guwahati | May 2025 - Present</span>
+                    <ul class="standard-list">
+                        <li><strong>Headstart:</strong> Crafted a competitive programming course for beginners, hosting contests with 1,000+ registrations.</li>
+                        <li><strong>Prepbit:</strong> Created contests simulating online assessments for internship recruitment (500+ registrations).</li>
+                        <li><strong>IIWCPC:</strong> Organized contest at Ethos 2025 with Jane Street; led contest design and problem preparation.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact" class="reveal">
+        <h2 class="contact-title">Let's Connect</h2>
+        <p>Currently seeking new opportunities in Software Development Engineering. Whether you have a question or just want to say hi, my inbox is always open.</p>
+        
+        <div class="socials">
+            <a href="mailto:keshav.goyal@iitg.ac.in">Email</a>
+            <a href="https://github.com/Keshav-goyal006" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/keshav-goyal-298738371/" target="_blank">LinkedIn</a>
+        </div>
+        
+        <div class="copyright">
+            <p>Designed & Built by Keshav Goyal</p>
+        </div>
+    </footer>
+
+</body>
+</html>
